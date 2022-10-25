@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+import './styles/App.css';
+import ItemList from './components/ItemList.js';
 function App() {
+  const arrayProduct =[
+    {
+      name:"mathidy",
+      image:"/images/im11.jpg",
+      price:"100£"
+    },
+    {
+      name:"argent",
+      image:"/images/im9.jpg",
+      price:"150£"
+    },
+    {
+      name:"cuir",
+      image:"/images/im4.jpg",
+      price:"100£"
+    },
+    {
+      name:"argent",
+      image:"/images/im2.png",
+      price:"100£"
+    },
+    {
+      name:"luxe",
+      image:"/images/im1.png",
+      price:"100£"
+    }
+    
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ItemList product={arrayProduct}/>
     </div>
   );
 }
