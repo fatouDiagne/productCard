@@ -1,6 +1,6 @@
 import Table from 'react-bootstrap/Table';
 import Item from './Item';
-const ItemList = (props) => {
+const ItemList = ({product}) => {
     const handleClick = (name) => {
         return alert(`The name of this is ${name}`)
     }
@@ -18,7 +18,7 @@ const ItemList = (props) => {
                     </thead>
                     <tbody>
                         {
-                            props.product.map((value, index) => (
+                            product.map((value, index) => (
                                 <Item value={value} key={index} handleClick={handleClick} />)
                             )
                         }
