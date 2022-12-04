@@ -13,7 +13,7 @@ const Item = ({value, handleClick})=> {
                     <h3>{value.price}</h3>
                 </td>
                 <td>
-                    <button style={{borderRadius:"5px", backgroundColor:"#c8d6e5", borderWidth:"2px"}} onClick={()=>value.handleClick(value.name)}>
+                    <button style={{borderRadius:"5px", backgroundColor:"#c8d6e5", borderWidth:"2px"}} onClick={()=>handleClick(value.name)}>
                         click Me
                     </button>
                 </td>

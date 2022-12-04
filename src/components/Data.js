@@ -1,9 +1,4 @@
-import './styles/App.css';
-import { Data } from './components/Data';
-import ItemList from './components/ItemList.js';
-import { useState } from 'react';
-function App() {
- /* const arrayProduct =[
+export let Data =[
     {
       name:"mathidy",
       image:"/images/im11.jpg",
@@ -30,14 +25,4 @@ function App() {
       price:"100£"
     }
     
-  ]*/
-  //const arrayProduct= [...Data];
-  const [arrayProduct, setArrayProduct] = useState([...Data]);
-  return (
-    <div className="App">
-      <ItemList product={arrayProduct}/>
-    </div>
-  );
-}
-
-export default App;
+  ]
